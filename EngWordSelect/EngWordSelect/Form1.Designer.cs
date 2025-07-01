@@ -50,6 +50,7 @@
             this.btnNext.TabIndex = 0;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnReset
             // 
@@ -59,6 +60,7 @@
             this.btnReset.TabIndex = 1;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // txtWord
             // 
@@ -76,7 +78,7 @@
             // 
             // txtSentence1
             // 
-            this.txtSentence1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtSentence1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSentence1.Location = new System.Drawing.Point(354, 124);
             this.txtSentence1.Name = "txtSentence1";
@@ -85,7 +87,7 @@
             // 
             // txtSentence2
             // 
-            this.txtSentence2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtSentence2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSentence2.Location = new System.Drawing.Point(354, 163);
             this.txtSentence2.Name = "txtSentence2";
@@ -94,7 +96,7 @@
             // 
             // txtSentence3
             // 
-            this.txtSentence3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtSentence3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSentence3.Location = new System.Drawing.Point(354, 207);
             this.txtSentence3.Name = "txtSentence3";
