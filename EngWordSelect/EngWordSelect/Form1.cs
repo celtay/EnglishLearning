@@ -45,7 +45,7 @@ namespace EngWordSelect
 
                 // B3'teki upper limit değerini oku
                 var upperLimitCell = worksheet.Cells[3, 2].Value2?.ToString(); // B sütunu = 2
-                MessageBox.Show($"B3'teki değer: {upperLimitCell}");
+                                                                               // MessageBox.Show($"B3'teki değer: {upperLimitCell}");
                 upperLimit = int.Parse(upperLimitCell ?? "0");
 
                 // Test amaçlı ilk birkaç hücrenin değerini görelim
@@ -55,7 +55,7 @@ namespace EngWordSelect
                     var value = worksheet.Cells[4, col].Value2?.ToString() ?? "boş";
                     testMessage += $"Sütun {col}: {value}\n";
                 }
-                MessageBox.Show(testMessage);
+                //MessageBox.Show(testMessage);
 
                 // Şimdi verileri doğru sütunlardan okuyalım
                 for (int i = 4; i <= upperLimit + 3; i++)
@@ -70,7 +70,7 @@ namespace EngWordSelect
                         string sentence2 = (worksheet.Cells[i, 9].Value2?.ToString() ?? "").Trim();  // I sütunu
                         string sentence3 = (worksheet.Cells[i, 10].Value2?.ToString() ?? "").Trim(); // J sütunu
 
-                        MessageBox.Show($"Satır {i}:\nNumara: {numberStr}\nKelime: {word}\nÇeviri: {translation}");
+                        //MessageBox.Show($"Satır {i}:\nNumara: {numberStr}\nKelime: {word}\nÇeviri: {translation}");
 
                         if (!string.IsNullOrEmpty(word))
                         {
