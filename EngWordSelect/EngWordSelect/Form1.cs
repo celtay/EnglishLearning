@@ -17,7 +17,7 @@ namespace EngWordSelect
         {
             InitializeComponent();
             LoadDataFromExcel();
-            //Tayfun Start Code 01.07.205
+            //Tayfun Start Code 01.07.2025
         }
 
         private class WordData
