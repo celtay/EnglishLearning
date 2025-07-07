@@ -138,6 +138,7 @@ namespace EngWordSelect
         {
             if (wordDictionary.TryGetValue(number, out WordData word))
             {
+
                 txtWord.Text = word.Word;
                 Translation = word.Translation;
                 txtSentence1.Text = word.Sentence1;

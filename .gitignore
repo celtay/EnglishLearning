@@ -20,8 +20,8 @@ mono_crash.*
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
+#[Rr]elease/
+#[Rr]eleases/
 x64/
 x86/
 [Ww][Ii][Nn]32/
@@ -90,7 +90,7 @@ StyleCopReport.xml
 *.idb
 *.iobj
 *.pch
-*.pdb
+#*.pdb
 *.ipdb
 *.pgc
 *.pgd
@@ -330,8 +330,8 @@ node_modules/
 _Pvt_Extensions
 
 # Paket dependency manager
-**/.paket/paket.exe
-paket-files/
+#**/.paket/paket.exe
+#paket-files/
 
 # FAKE - F# Make
 **/.fake/
@@ -351,7 +351,7 @@ paket-files/
 *.tss
 
 # Telerik's JustMock configuration file
-*.jmconfig
+#*.jmconfig
 
 # BizTalk build output
 *.btp.cs
