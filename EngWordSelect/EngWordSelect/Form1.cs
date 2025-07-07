@@ -12,6 +12,8 @@ namespace EngWordSelect
         private int upperLimit;
         private Random random = new Random();
         private Dictionary<int, WordData> wordDictionary = new Dictionary<int, WordData>();
+        private string Translation;
+
 
         public Form1()
         {
@@ -92,7 +94,7 @@ namespace EngWordSelect
                     }
                 }
 
-                MessageBox.Show($"Toplam {wordDictionary.Count} kelime yüklendi.");
+                //MessageBox.Show($"Toplam {wordDictionary.Count} kelime yüklendi.");
             }
             catch (Exception ex)
             {
@@ -120,7 +122,7 @@ namespace EngWordSelect
                 MessageBox.Show("Tüm kelimeler kullanıldı! Reset'e basın.");
                 return;
             }
-
+            txtTranslation.Clear();
             int randomNumber;
             do
             {
@@ -129,6 +131,7 @@ namespace EngWordSelect
 
             usedNumbers.Add(randomNumber);
             DisplayWord(randomNumber);
+
         }
         // Kelimeyi gösterme metodu
         private void DisplayWord(int number)
@@ -136,7 +139,7 @@ namespace EngWordSelect
             if (wordDictionary.TryGetValue(number, out WordData word))
             {
                 txtWord.Text = word.Word;
-                txtTranslation.Text = word.Translation;
+                Translation = word.Translation;
                 txtSentence1.Text = word.Sentence1;
                 txtSentence2.Text = word.Sentence2;
                 txtSentence3.Text = word.Sentence3;
@@ -151,6 +154,11 @@ namespace EngWordSelect
             txtSentence1.Clear();
             txtSentence2.Clear();
             txtSentence3.Clear();
+        }
+
+        private void shwButton_Click(object sender, EventArgs e)
+        {
+            txtTranslation.Text = Translation;
         }
     }
 }
