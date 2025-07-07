@@ -40,11 +40,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.shwButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(47, 77);
+            this.btnNext.Location = new System.Drawing.Point(30, 112);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(120, 50);
             this.btnNext.TabIndex = 0;
@@ -54,7 +55,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(47, 163);
+            this.btnReset.Location = new System.Drawing.Point(30, 177);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(120, 50);
             this.btnReset.TabIndex = 1;
@@ -148,11 +149,22 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Ornek 3";
             // 
+            // shwButton
+            // 
+            this.shwButton.Location = new System.Drawing.Point(534, 84);
+            this.shwButton.Name = "shwButton";
+            this.shwButton.Size = new System.Drawing.Size(130, 22);
+            this.shwButton.TabIndex = 12;
+            this.shwButton.Text = "Show";
+            this.shwButton.UseVisualStyleBackColor = true;
+            this.shwButton.Click += new System.EventHandler(this.shwButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.shwButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -166,7 +178,7 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnNext);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "English Word Teacher";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +198,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button shwButton;
     }
 }
 
